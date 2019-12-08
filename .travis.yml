@@ -1,3 +1,8 @@
+language: cpp
+os: linux
+dist: bionic
+sudo: false
+
 install:
   - git clone --recursive https://github.com/boostorg/boost.git
   - cp root_cmake_file/CMakeLists.txt boost/CMakeLists.txt
