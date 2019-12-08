@@ -10,5 +10,5 @@ install:
 script:
   - cmake --version
   - mkdir __out__ && cd __out__
-  - cmake --log-level=VERBOSE ../boost
+  - cmake --log-level=VERBOSE -DBOOST_MIN_CMAKE_INCLUDE_ALL_TESTS=ON ../boost
   - cmake --build .
