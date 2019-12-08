@@ -30,7 +30,7 @@ option( BOOST_MIN_CMAKE_INCLUDE_ALL_TESTS "Include boost tests (where known to c
 
 # exclude libraries that don't work with the superproject yet
 # (e.g. due to missing dependencies or conflicting target definitions)
-set( BOOST_MIN_CMAKE_IGNORE_LIBS beast;callable_traits;compute;gil;hana;safe_numerics;serialization;yap
+set( BOOST_MIN_CMAKE_IGNORE_LIBS beast;callable_traits;compute;gil;hana;safe_numerics;serialization;yap;hof
      CACHE STRING "List of libraries that will be excluded from cmake build (format: lib1;lib2;lib3)" )
 
 # Root of boost distribution we want to compile.
