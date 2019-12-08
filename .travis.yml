@@ -1,0 +1,6 @@
+install:
+  - git clone --recursive https://github.com/boostorg/boost.git
+  - cp root_cmake_file/CMakeLists.txt boost/CMakeLists.txt
+
+script:
+  - cmake -S ./boost/CMakeLists.txt -B __out__
