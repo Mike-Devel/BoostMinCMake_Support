@@ -78,7 +78,7 @@ foreach( cmake_file IN LISTS boost_libs_with_cmake_files )
 	string(TOUPPER ${lib_name} lib_macro_prefix )
 
     if(NOT lib_name IN_LIST BOOST_MIN_CMAKE_IGNORE_LIBS )
-        message( STATUS "[${CMAKE_PROJECT_NAME}] Adding library ${lib_name}" )
+        message( VERBOSE "[${CMAKE_PROJECT_NAME}] Adding library ${lib_name}" )
 
 		if(${CMAKE_PROJECT_NAME}_INCLUDE_ALL_TESTS)
 			set(BOOST_${lib_macro_prefix}_INCLUDE_TESTS ON)
