@@ -11,3 +11,4 @@ script:
   - cmake --version
   - mkdir __out__ && cd __out__
   - cmake ../boost
+  - cmake --build .
