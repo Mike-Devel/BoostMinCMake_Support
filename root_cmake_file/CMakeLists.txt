@@ -2,13 +2,10 @@
 # Distributed under the Boost Software License, Version 1.0.
 # See accompanying file LICENSE_1_0.txt or copy at https://www.boost.org/LICENSE_1_0.txt
 
-cmake_minimum_required( VERSION 3.5 )
+cmake_minimum_required( VERSION 3.10 )
 # NOTE: Individual boost cmake files might require a higher cmake version
-if( POLICY CMP0074 )
-  cmake_policy( SET CMP0074 NEW )
-endif()
-if( POLICY CMP0069 )
-  cmake_policy( SET CMP0069 NEW )
+if( POLICY CMP0077 )
+  cmake_policy( SET CMP0077 NEW )
 endif()
 
 project( BoostMinCMake LANGUAGES CXX )
