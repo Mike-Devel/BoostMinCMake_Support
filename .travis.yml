@@ -4,8 +4,10 @@ dist: bionic
 sudo: false
 
 install:
-  - git clone --recursive https://github.com/boostorg/boost.git
+  - git clone --depth 2 --branch develop --recursive https://github.com/boostorg/boost.git
   - cp root_cmake_file/CMakeLists.txt boost/CMakeLists.txt
 
 script:
-  - cmake -S ./boost/CMakeLists.txt -B __out__
+  - cmake --version
+  - mkdir __out__ && cd __out__
+  - cmake ../boost
